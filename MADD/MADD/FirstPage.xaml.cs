@@ -14,9 +14,13 @@ namespace MADD
         {
             InitializeComponent();
         }
+
         public async void NextPage(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new DemoPage());
+
+           string username = Username.Text;
+           await DisplayAlert("Welcome to Microsoft Event (Xamarin Forms)", "Your Name: " + username +  "","Cancel" );
+           await Navigation.PushAsync(new DemoPage());
         }
     }
 }

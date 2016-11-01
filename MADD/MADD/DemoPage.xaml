@@ -10,6 +10,7 @@
   <StackLayout Spacing="20"
                Padding="20"
                VerticalOptions="Center">
+   
     <Entry x:Name="TodoName" Text="{Binding Todo, Mode=TwoWay}" 
            Placeholder="Enter your Todo"  />
     <Button Text="Add your Todo" 

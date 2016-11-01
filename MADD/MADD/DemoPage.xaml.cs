@@ -19,7 +19,7 @@ namespace MADD
         {
             string text = TodoName.Text;
             NewTodo.Text = "Your New Todo is: " + text;
-            await DisplayAlert("Microsoft", "Your Todo "+ text + " been added", "Ok");
+            await DisplayAlert("Microsoft", "Your Todo "  + text + " been added", "Ok");
         }
     }
 }

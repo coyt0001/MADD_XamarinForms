@@ -7,14 +7,18 @@
   <StackLayout Spacing="20" Padding="20"
                          VerticalOptions="Center">
        <Label Text="Welcome to Xamarin Form "/>
-    <Entry Placeholder="Username"
+    <Entry x:Name="Username"
+           Placeholder="Username"
            Text="{Binding Username}"/>
     <Entry Placeholder="Password"
            Text="{Binding Password}"
            IsPassword="true"/>
-    <Button Text="Login" TextColor="White"
+    <Button Text="Login" 
+            TextColor="White"
             BackgroundColor="#77D065"
-            Command="{Binding LoginCommand}" Clicked="NextPage" />
+            Command="{Binding LoginCommand}" 
+            Clicked="NextPage"/>
+    
   
   </StackLayout>
 
