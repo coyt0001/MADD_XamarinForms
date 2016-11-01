@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+
+             x:Class="MADD.DemoPage">
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness" iOS="5, 20, 5, 0" Android="5, 0, 5, 0" WinPhone="5, 0, 5, 0" />
+  </ContentPage.Padding>
+
+  <StackLayout Spacing="20"
+               Padding="20"
+               VerticalOptions="Center">
+    <Entry x:Name="TodoName" Text="{Binding Todo, Mode=TwoWay}" 
+           Placeholder="Enter your Todo"  />
+    <Button Text="Add your Todo" 
+            TextColor="White"
+            BackgroundColor="#77D065" 
+            Clicked="Add"/>
+  <StackLayout Padding="0,20,0,0" Orientation="Horizontal">
+			<Label x:Name="NewTodo" />
+		
+		</StackLayout>
+</StackLayout>
+</ContentPage>
